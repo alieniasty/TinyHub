@@ -1,0 +1,17 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.6",
+    "jquery": "2.2.0",
+    "jquery-validation": "1.14.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "font-awesome": "4.7.0",
+    "bootstrap-select": "1.12.0",
+    "underscore-min": "1.8.3",
+    "pdfmake": "0.1.24",
+    "chart.js": "2.4.0",
+    "bootstrap-datepicker": "1.6.4",
+    "bootstrap-confirmation2" :  "2.4.0" 
+  }
+}

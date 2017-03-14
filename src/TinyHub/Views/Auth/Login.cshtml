@@ -1,0 +1,25 @@
+﻿@model TinyHub.ViewModels.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+@section scripts
+{
+    <link href="~/css/login.css" rel="stylesheet" />
+}
+
+<body class="main-banner center-block">
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="~/images/user.png"/>
+        <form class="form-signin" Method="post" asp-antiforgery="true">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input asp-for="@Model.Username" type="text" id="inputEmail" class="form-control" placeholder="Login" required autofocus>
+            <input asp-for="@Model.Password" type="password" id="inputPassword" class="form-control" placeholder="Password" required autofocus>
+            <button class="btn btn-lg btn-success btn-block btn-signin" type="submit">Log in</button>
+        </form>
+        <a href="#" class="forgot-password">
+            Forgot the password?
+        </a>
+    </div>
+</div>
+</body>

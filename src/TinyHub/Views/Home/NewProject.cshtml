@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "title";
+}
+@section Scripts {
+    <script type="text/javascript" src="~/js/newProject.js"></script>
+    <link href="~/css/newProject.css" rel="stylesheet" />
+}
+<div class="container">
+    <h2>Create a new project</h2>
+
+    <div class="split-horizontal-main-wrap">
+        <form class="split-horizontal-half-left" asp-antiforgery="true">
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-cloud"></i></span>
+                        <input type="text" class="form-control" placeholder="Name of your project" id="projectName" required autofocus>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-copyright"></i></span>
+                        <select class="selectpicker form-control" id="licenseType">
+                            <option>MIT License</option>
+                            <option>GNU GPL</option>
+                            <option>Mozilla Public License 2.0</option>
+                            <option>Apache License</option>
+                            <option>Unlicensed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="form-group col-xs-8">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <select class="selectpicker form-control" id="projectAccess">
+                            <option>Public</option>
+                            <option>Private</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bottom-15 top-20">
+                <div class="col-xs-4">
+                    <div class="btn btn-success custom-btn" id="addButton">Add</div>
+                </div>
+            </div>
+
+            <div class="row bottom-15">
+                <div class="col-xs-4">
+                    <div class="btn btn-warning custom-btn" id="cancelButton">Cancel</div>
+                </div>
+            </div>
+        </form>
+
+        <div class="split-horizontal-half-right">
+            <div id="projectNameDescription" class="bigger-300"></div>
+            <div id="projectLicenseType" class="bigger-175"></div>
+            <div id="projectAccessDescription" class="bigger-150"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

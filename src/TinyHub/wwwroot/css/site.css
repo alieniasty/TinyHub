@@ -1,0 +1,138 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-banner {
+    background: url(../images/main-photo.png) no-repeat center center fixed;
+    -ms-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+.footer {
+    background-color: #b3d1e0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    left: 0;
+}
+
+.bigger-400 {
+    font-size: 400%;
+}
+
+.bigger-300 {
+    font-size: 300%;
+}
+
+.bigger-175 {
+    font-size: 175%;
+}
+
+.bigger-150 {
+    font-size: 150%;
+}
+
+.add-button {
+    background: #34a8e3;
+    border: none;
+    top: 7px;
+    padding-bottom: 5px;
+}
+
+.custom-btn {
+    width: 100px !important;
+}
+
+.bottom-15 {
+     margin-bottom:15px;
+}
+
+.top-20 {
+     margin-top:20px;
+}
+
+.split-horizontal-half-left {
+    float: left;
+    width: 45%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.split-horizontal-half-right {
+    float: right;
+    width: 50%;
+}
+
+.split-horizontal-main-wrap {
+    overflow: hidden;
+}
+
+.black-333 {
+    color: #333;
+}
+
+/*Overrides*/
+
+.navbar {
+    background-color: #3c3d3f;
+    border: none;
+    border-right: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size: 130%
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #b3d1e0;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 165%
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #b3d1e0;
+}
+
+.input-group-addon {
+    min-width:40px;
+    text-align:left;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+ background: rgba(179, 209, 224, 0.3);
+  -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(60, 61, 63, 0.5); 
+  -webkit-border-radius: 0;
+}
+

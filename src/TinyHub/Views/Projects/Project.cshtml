@@ -1,0 +1,86 @@
+﻿@model TinyHub.ViewModels.ProjectViewModel
+@{
+    ViewBag.Title = "Project";
+}
+@section scripts
+{
+    <script src="~/js/SingleProject/bugs.js"></script>
+    <script src="~/js/SingleProject/code.js"></script>
+    <script src="~/js/SingleProject/feed.js"></script>
+    <script src="~/lib/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/lib/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/lib/bootstrap-confirmation2/bootstrap-confirmation.js"></script>
+
+    <link href="~/css/SingleProject/feed.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/SingleProject/bugs.css"/>
+    <link rel="stylesheet" href="~/css/SingleProject/project.css"/>
+    <link rel="stylesheet" href="~/css/animate.css"/>
+}
+
+<div class="project-navbar">
+    <ul class="nav">
+        <li style="background-color: #d5e5ed; font-size: 135%; text-align: center" class="nohover">
+            <a asp-controller="Projects" asp-action="Project" class="black-333" id="activeProject">@Model.Name</a>
+        </li>
+
+        <li class="top-20">
+            <a href="#" id="feed">
+                <i class="fa fa-rss fa-2x"></i>
+                <span class="badge js-notification-count hide"></span>
+                <span> Feed </span>
+            </a>
+        </li>
+        <li>
+            <a href="#" id="bugs">
+                <i class="fa fa-bug fa-2x"></i>
+                <span> Bugs </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div id="rightPanel" style="height: 100%; position: fixed; right: 0; width: 85%;">
+    <div class="selectedContent animated zoomInUp">
+        <div id="filesInput">
+            <form method="post" asp-action="Upload" asp-controller="Project" asp-route-id="@Model.Name" enctype="multipart/form-data" asp-antiforgery="true">
+                <input type="file" name="files" id="files" class="inputfile" data-multiple-caption="{count} files selected" multiple/>
+                <label for="files">Choose a file</label>
+                <input type="submit" value="Upload" class="btn btn-info" onclick="uploadWait()"/>
+            </form>
+        </div>
+
+        <div id="filesList">
+            @if (ViewBag.Files == null)
+            {
+                <p style="font-size: 140%; text-align: center;">Currently you don't have any files</p>
+                <i class="fa fa-smile-o fa-3x" style="margin-left: 48%"></i>
+            }
+            @if (ViewBag.Files != null)
+            {
+                <table class="table table-hover">
+                    <tbody>
+                    @foreach (var file in ViewBag.Files)
+                    {
+                        <tr>
+                            <td width="5%"><i id="fileIcon"></i></td>
+                            <td>
+                                <span>@file</span>
+                            </td>
+
+                            <td>
+                                <a href="#" onclick="confirmDeleteFile('@file','@Model.Name',this)" data-toggle="confirmation" data-placement="left" style="margin-right: 15px">
+                                    <i class="fa fa-trash-o"></i>
+                                </a>
+
+                                <a asp-action="GetFile" asp-controller="Projects" asp-route-fileName="@file" asp-route-projectFolder="@Model.Name">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </div>
+</div>

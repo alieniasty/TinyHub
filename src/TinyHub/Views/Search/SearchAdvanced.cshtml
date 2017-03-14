@@ -1,0 +1,47 @@
+﻿@model TinyHub.ViewModels.AdvancedSearchProjectViewModel
+@section scripts
+{
+    <script src="~/lib/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <link href="~/lib/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <script src="~/js/searchAdvanced.js"></script>
+    <link href="~/css/searchAdvanced.css" rel="stylesheet" />
+}
+
+<form asp-action="AdvancedSearchResult" method="post" class="search-advanced-form">
+    
+    <i class="fa fa-search fa-4x" id="icon-addon"></i>
+
+    <div class="form-group">
+        <label asp-for="ProjectName"> Project name</label>
+        <input asp-for="ProjectName" type="text" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="FromUser"> From user</label>
+        <input asp-for="FromUser" type="text" class="form-control"/>
+    </div>
+
+    <div class="form-group" id="date-container">
+        <label asp-for="DateCreatedFrom"> Date created from</label>
+        <input asp-for="DateCreatedFrom" class="form-control" type="text"/>
+
+        <label asp-for="DateCreatedTo"> To</label>
+        <input asp-for="DateCreatedTo" class="form-control" type="text"/>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="License"> License</label>
+        <select asp-for="License" type="text" class="selectpicker form-control">
+            <option>None</option>
+            <option>MIT License</option>
+            <option>GNU GPL</option>
+            <option>Mozilla Public License 2.0</option>
+            <option>Apache License</option>
+            <option>Unlicensed</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-info btn-lg">Search</button>
+</form>
+
+

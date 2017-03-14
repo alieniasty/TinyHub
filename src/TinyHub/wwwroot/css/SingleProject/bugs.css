@@ -1,0 +1,56 @@
+﻿.submitNewBugButton {
+    margin-left: 81%;
+    position: fixed;
+    margin-top: 37%;
+}
+
+.submitNewBugButton :hover {
+    text-decoration: none;
+}
+
+.submitNewBugBtnText {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 69%;
+    margin-top: 37%;
+}
+
+.tableToPdfBtn {
+    margin-left: 81%;
+    position: fixed;
+    margin-top: 40%;
+}
+
+.tableToPdfBtnText {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 71%;
+    margin-top: 40%;
+}
+
+.bug-Input {
+    left: 60%;
+    position: fixed;
+    margin-top: 40px;
+    display: none;
+    margin-right: 10%;
+}
+
+.bugActionBtn {
+    background-color: Transparent;
+    border: none;
+    cursor:pointer;
+    outline:none;
+}
+
+#telegramBtn {
+    text-decoration: none;
+}
+
+#pdfBtn {
+    text-decoration: none; 
+}
+
+textarea { 
+   resize:vertical;
+}

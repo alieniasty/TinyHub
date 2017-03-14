@@ -1,0 +1,17 @@
+﻿.searchAdvancedBtn {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 96%;
+    margin-top: 1.5%;
+}
+
+.searchAdvancedBtnText {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 86%;
+    margin-top: 1.7%;
+}
+
+#searchBtn :hover {
+    text-decoration: none;
+}

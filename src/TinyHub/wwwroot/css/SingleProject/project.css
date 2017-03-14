@@ -1,0 +1,165 @@
+﻿::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+::-webkit-scrollbar-thumb:vertical {
+ background: rgba(179, 209, 224, 0.3);
+  -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(179, 209, 224, 0.5); 
+  -webkit-border-radius: 0;
+}
+
+.project-navbar {
+    background-color: #b3d1e0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    position: fixed;
+}
+
+div.project-navbar > ul > li {
+    list-style: none;
+    position: relative;
+}
+
+div.project-navbar > ul > li .badge {
+    position: absolute;
+    top: 0;
+    left: 27px;
+    background: #23527c;
+}
+
+div.project-navbar > ul > li > a {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+div.project-navbar > ul > li > a > span {
+    padding-left: 10px;
+}
+
+div.project-navbar > ul > li > a:hover {
+    background-color: #d5e5ed;
+    border-left-style: solid;
+    border-left-color: #23527C;
+}
+
+.nohover :hover {
+    border: 0;
+}
+
+.selectedContent {
+    left: 15%;
+    position: fixed;
+    width: 66%;
+    margin-left: 50px;
+    margin-top: 10px;
+    overflow-y: auto;
+    max-height: 85%;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+    cursor: pointer;
+    color: white;
+    background-color: #31b0d5;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    border-color: #269abc;
+}
+
+.deleteProjectButton {
+    margin-left: 81%;
+    position: fixed;
+    margin-top: 40%;
+}
+
+.deleteProjectButton :hover {
+    text-decoration: none;
+}
+
+.deleteProjectButton :focus {
+    text-decoration: none;
+}
+
+.deleteProjectBtnText {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 71%;
+    margin-top: 40%;
+}
+
+.addFilesButton {
+    margin-left: 81%;
+    position: fixed;
+    margin-top: 37%;
+}
+
+.addFilesButton :hover {
+    text-decoration: none;
+}
+
+.addFilesButton :focus {
+    text-decoration: none;
+}
+
+.addFilesBtnText {
+    font-size: 20px;
+    position: fixed;
+    margin-left: 69%;
+    margin-top: 37%;
+}
+
+#filesInput {
+    display: none;
+}
+
+#filesList {
+    margin-top: 15px;
+}
+
+#filesList a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+#filesList td:nth-child(3) {
+    text-align: right;
+}
+
+#load {
+    margin-left: 50%;
+}

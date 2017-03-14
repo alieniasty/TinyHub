@@ -1,0 +1,26 @@
+﻿@model IEnumerable<TinyHub.Models.Project>
+@{
+    ViewData["Title"] = "MyProjects";
+}
+@section scripts
+{
+   <script type="text/javascript" src="~/js/myProjects.js"></script>
+}
+
+<div class="container">
+    <ul class="nav top-20" id="myProjectsColumns">
+        @foreach (var project in Model)
+        {
+            <li>
+                <a id="project" asp-controller="Projects" asp-action="Project" asp-route-id="@project.Name" class="black-333 bigger-175">
+                    @if (@project.IsPrivateProject)
+                    {
+                        <i class="fa fa-lock"></i>
+                    }
+                    <i class="fa fa-folder" id="folder"></i>
+                    <span style="font-size: 80%; padding-left: 10px;"> @project.Name</span>
+                </a>
+            </li>
+        }
+    </ul>
+</div>

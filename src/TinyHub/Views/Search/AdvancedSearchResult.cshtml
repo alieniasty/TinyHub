@@ -1,0 +1,33 @@
+﻿@model IEnumerable<TinyHub.Models.Project>
+@section scripts
+{
+    <link rel="stylesheet" href="~/css/animate.css" />
+    <script src="~/js/search.js"></script>
+    <link href="~/css/search.css" rel="stylesheet" />
+}
+
+<table class="table table-hover" style="margin-left: 10%; margin-right: 30%; position: fixed; width: 70%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>License</th>
+            <th>Date of creation</th>
+            <th>From user</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var project in Model)
+        {
+            <tr>
+                <td>
+                    <i class="fa fa-folder"></i>
+                    <a asp-controller="Projects" asp-action="Project" asp-route-id="@project.Name" class="black-333">@project.Name</a>
+                </td>
+                <td>@project.License</td>
+                <td>@project.DateCreated</td>
+                <td>@project.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

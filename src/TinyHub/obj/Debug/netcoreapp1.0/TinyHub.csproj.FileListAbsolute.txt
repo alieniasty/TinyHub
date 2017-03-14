@@ -1,0 +1,9 @@
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\bin\Debug\netcoreapp1.0\TinyHub.deps.json
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\bin\Debug\netcoreapp1.0\TinyHub.runtimeconfig.json
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\bin\Debug\netcoreapp1.0\TinyHub.runtimeconfig.dev.json
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\bin\Debug\netcoreapp1.0\TinyHub.dll
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\bin\Debug\netcoreapp1.0\TinyHub.pdb
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\obj\Debug\netcoreapp1.0\TinyHub.csprojResolveAssemblyReference.cache
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\obj\Debug\netcoreapp1.0\TinyHub.AssemblyInfo.cs
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\obj\Debug\netcoreapp1.0\TinyHub.dll
+C:\Users\obcon\Documents\Visual Studio 2017\Projects\TinyHub\src\TinyHub\obj\Debug\netcoreapp1.0\TinyHub.pdb
