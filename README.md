@@ -37,8 +37,10 @@ I wasn't familiar with Angular or any Dynamic/Single-page JS framework back then
     
 - Search system
 
-Fell free to pull TinyHub and take a look in code for yourself :)
-    
     - Basic search by project's name
     - Advanced project search by all it's fields including the project's start date
+
+Fell free to pull TinyHub and take a look in code for yourself :)
+    
+    
   
